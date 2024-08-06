@@ -9,7 +9,7 @@ export default function Header() {
 					<h1 className='text-2xl font-bold text-gray-800'>Swap Rx</h1>
 				</div>
 				<nav>
-					<ul className='hidden md:flex space-x-6'>
+					<ul className='hidden md:flex space-x-6 text-[15px]'>
 						<li>
 							<a href='#accueil' className='text-gray-600 hover:text-primary'>
 								Accueil
@@ -38,7 +38,7 @@ export default function Header() {
 						</li>
 					</ul>
 				</nav>
-				<Button className='bg-primary hover:bg-[#1C8A91] text-white'>
+				<Button className='border-[#1C8A91] border hover:bg-[#1C8A91] text-white transition-all duration-300 ease-out bg-primary'>
 					Demander une démo
 				</Button>
 			</div>
