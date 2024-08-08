@@ -15,7 +15,7 @@ export default function FAQSection() {
 						non eos.
 					</p>
 					<Image
-						src={'/faq.png'}
+						src='/faq.png'
 						width={542.5}
 						height={377.5}
 						alt='faq'
