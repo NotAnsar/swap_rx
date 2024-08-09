@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import { Button } from './ui/button';
+import { Button, buttonVariants } from './ui/button';
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 export default function HeroSection() {
 	return (
@@ -21,17 +23,20 @@ export default function HeroSection() {
 						<div className='flex-col sm:flex-row flex gap-4'>
 							<Button
 								size='lg'
-								className='bg-[#20A9B1] hover:bg-[#1C8A91] text-white w-full sm:w-auto'
+								className='bg-primary hover:bg-primary text-white w-full sm:w-auto'
 							>
 								{"Télécharger l'application"}
 							</Button>
-							<Button
-								size='lg'
-								variant='outline'
-								className='border-[#20A9B1] text-[#20A9B1] hover:bg-[#E6F7F8] w-full sm:w-auto'
+
+							<Link
+								href={'/#contact'}
+								className={cn(
+									buttonVariants({ size: 'lg', variant: 'outline' }),
+									'border-primary text-primary hover:bg-[#E6F7F8] w-full sm:w-auto hover:text-primary'
+								)}
 							>
-								Télécharger
-							</Button>
+								Contactez-nous
+							</Link>
 						</div>
 					</div>
 					<div className='md:w-1/2 flex justify-center items-center'>

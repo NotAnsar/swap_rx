@@ -5,6 +5,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
 	title: 'Swap Rx',
@@ -37,6 +38,8 @@ export default function RootLayout({
 				<div className='min-h-screen flex flex-col'>
 					<Header />
 					{children}
+					<Toaster />
+
 					<Footer />
 				</div>
 			</body>
